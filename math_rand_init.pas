@@ -4,7 +4,7 @@ module math_rand_init;
 define math_rand_init_int;
 define math_rand_init_clock;
 define math_rand_init_vstr;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 {
 *********************************************************************
 *

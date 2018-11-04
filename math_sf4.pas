@@ -3,7 +3,7 @@ define math_sf4_calc_coef;
 define math_sf4_val;
 define math_sf4_dxdu;
 define math_sf4_dxdv;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 {
 *******************************************************************************
 *

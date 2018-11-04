@@ -3,7 +3,7 @@ define math_sf8_calc_coef;
 define math_sf8_val;
 define math_sf8_dxdu;
 define math_sf8_dxdv;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 {
 *******************************************************************************
 *

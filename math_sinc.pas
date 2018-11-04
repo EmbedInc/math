@@ -8,7 +8,7 @@
 }
 module math_sinc;
 define math_sinc;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 
 function math_sinc (                   {SINC function, SIN(PI*X)/(PI*X)}
   in      x: real)                     {input to equation above}

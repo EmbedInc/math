@@ -29,7 +29,7 @@
 }
 module math_simul;
 define math_simul;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 
 procedure math_simul (                 {solve simultaneous equations}
   in      n: sys_int_machine_t;        {number of equations}

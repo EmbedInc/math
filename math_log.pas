@@ -1,7 +1,7 @@
 module math_log;
 define math_log2;
 define math_log10;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 {
 *************************************
 *

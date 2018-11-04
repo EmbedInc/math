@@ -10,7 +10,7 @@
 }
 module math_ipolate;
 define math_ipolate;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 
 function math_ipolate (                {linearly interpolate into table of values}
   in      funar: univ math_funar_arg_t; {N pairs of XY values}

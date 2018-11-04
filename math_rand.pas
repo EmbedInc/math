@@ -5,7 +5,7 @@ define math_rand_int32;
 define math_rand_int16;
 define math_rand_int8;
 define math_rand_real;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 {
 ************************************************************
 *

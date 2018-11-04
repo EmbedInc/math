@@ -4,7 +4,7 @@
 module math_ihs;
 define math_ihs_rgb;
 define math_rgb_ihs;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 {
 ********************************************************************
 *

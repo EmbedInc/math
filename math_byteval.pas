@@ -5,7 +5,7 @@
 }
 module math_byteval;
 define math_byteval_signed;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 
 function math_byteval_signed (         {convert any byte to a signed integer}
   in      c: univ char)                {input byte}

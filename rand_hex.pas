@@ -10,10 +10,10 @@
 *   to print.  The default is 32.
 }
 program rand_hex;
-%include '/cognivision_links/dsee_libs/sys/sys.ins.pas';
-%include '/cognivision_links/dsee_libs/util/util.ins.pas';
-%include '/cognivision_links/dsee_libs/string/string.ins.pas';
-%include '/cognivision_links/dsee_libs/math/math.ins.pas';
+%include 'sys.ins.pas';
+%include 'util.ins.pas';
+%include 'string.ins.pas';
+%include 'math.ins.pas';
 
 const
   n_numbers_default = 32;              {default number of random numbers to print}
@@ -24,7 +24,7 @@ var
   i: sys_int_machine_t;                {loop counter}
   rand: sys_int_conv32_t;              {32 bit random number}
   token:
-    %include '/cognivision_links/dsee_libs/string/string32.ins.pas';
+    %include '(cog)lib/string32.ins.pas';
   stat: sys_err_t;                     {completion status}
 
 begin

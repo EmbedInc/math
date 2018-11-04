@@ -7,7 +7,7 @@
 }
 module math_ipolate3;
 define math_ipolate3;
-%include '/cognivision_links/dsee_libs/math/math2.ins.pas';
+%include 'math2.ins.pas';
 
 function math_ipolate3 (               {cubically interpolate into table of values}
   in      table: univ math_funar_arg_t; {pairs of XY values}
