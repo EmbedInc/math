@@ -1,0 +1,13 @@
+math_byteval.obj
+math_ihs.obj
+math_ipolate.obj
+math_ipolate3.obj
+math_log.obj
+math_rand.obj
+math_rand_init.obj
+math_sf4.obj
+math_sf6.obj
+math_sf8.obj
+math_sign_int.obj
+math_simul.obj
+math_sinc.obj
