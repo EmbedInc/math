@@ -2,6 +2,17 @@
 *   MATH library.
 }
 const
+{
+*   Mathematical constants.
+}
+  math_pi = 3.14159265358979323846;    {what it sounds like, don't touch}
+  math_2pi = 2.0 * math_pi;            {2 pi, radians in a full circle}
+  math_hpi = 0.5 * math_pi;            {half pi, radians in 90 degrees}
+  math_rad_deg = 180.0 / math_pi;      {factor to convert radians to degrees}
+  math_deg_rad = math_pi / 180.0;      {factor to convert degrees to radians}
+{
+*   Configuration parameters for the MATH library.
+}
   math_seed_char_k = 80;               {number of characters in random seed}
   math_seed_i16_k =                    {number of 16 bit integers in random seed}
     math_seed_char_k div 2;
