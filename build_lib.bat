@@ -9,6 +9,7 @@ call build_pasinit
 
 call src_insall %srcdir% %libname%
 
+call src_pas %srcdir% %libname%_angle %1
 call src_pas %srcdir% %libname%_byteval %1
 call src_pas %srcdir% %libname%_ihs %1
 call src_pas %srcdir% %libname%_ipolate %1

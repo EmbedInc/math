@@ -73,6 +73,16 @@ math_sf_8pnt_k: (                      {8 point shape function}
 {
 *   Entry point definitions.
 }
+function math_angle_math (             {convert to survey to math angle}
+  in      sang: real)                  {survey angle}
+  :real;                               {equivalent math angle}
+  val_param; extern;
+
+function math_angle_surv (             {convert math angle to survey angle}
+  in      mang: real)                  {math angle}
+  :real;                               {equivalent survey angle}
+  val_param; extern;
+
 function math_byteval_signed (         {convert any byte to a signed integer}
   in      c: univ char)                {input byte}
   :sys_int_machine_t;                  {integer value, -128 to 127}
