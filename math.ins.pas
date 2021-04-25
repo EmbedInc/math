@@ -83,6 +83,11 @@ function math_angle_surv (             {convert math angle to survey angle}
   :real;                               {equivalent survey angle}
   val_param; extern;
 
+function math_angle_wrapq (            {do "quick" wrap of angle into 0-2pi range}
+  in      ang: real)                   {input angle, radians}
+  :real;                               {result, wrapped up to one circle + or -}
+  val_param; extern;
+
 function math_byteval_signed (         {convert any byte to a signed integer}
   in      c: univ char)                {input byte}
   :sys_int_machine_t;                  {integer value, -128 to 127}

@@ -21,6 +21,7 @@
 module math_angle;
 define math_angle_math;
 define math_angle_surv;
+define math_angle_wrapq;
 %include 'math2.ins.pas';
 {
 ********************************************************************************
@@ -40,7 +41,7 @@ var
 
 begin
   mang := math_hpi - sang;             {convert to math angle}
-  if mang > math_2pi then mang := mang - math_2pi; {try to wrap to 0-2pi range}
+  if mang >= math_2pi then mang := mang - math_2pi; {try to wrap to 0-2pi range}
   if mang < 0.0 then mang := mang + math_2pi;
   math_angle_math := mang;             {pass back the result}
   end;
@@ -62,7 +63,37 @@ var
 
 begin
   sang := math_hpi - mang;             {convert to survey angle}
-  if sang > math_2pi then sang := sang - math_2pi; {try to wrap to 0-2pi range}
+  if sang >= math_2pi then sang := sang - math_2pi; {try to wrap to 0-2pi range}
   if sang < 0.0 then sang := sang + math_2pi;
   math_angle_surv := sang;             {pass back the result}
+  end;
+{
+********************************************************************************
+*
+*   Function MATH_ANGLE_WRAPQ (ANG)
+*
+*   Wrap an angle into the 0 to 2pi range.  This is a "quick" version that can
+*   only add or subtract up to one full circle from the angle.
+}
+function math_angle_wrapq (            {do "quick" wrap of angle into 0-2pi range}
+  in      ang: real)                   {input angle, radians}
+  :real;                               {result, wrapped up to one circle + or -}
+  val_param;
+
+begin
+  if ang >= math_2pi
+    then begin
+      math_angle_wrapq := ang - math_2pi;
+      end
+    else begin
+      if ang < 0.0
+        then begin
+          math_angle_wrapq := ang + math_2pi;
+          end
+        else begin
+          math_angle_wrapq := ang;
+          end
+        ;
+      end;
+    ;
   end;
